@@ -1,0 +1,48 @@
+:root {
+  /* Color primario (la barra superior, etc.) */
+  --md-primary-fg-color:        #000078; 
+  --md-primary-fg-color--light: #000078;
+  --md-primary-fg-color--dark:  #000078;
+
+  --md-default-fg-color:               #000078;
+  --md-default-fg-color--light:        #000078;
+  --md-default-fg-color--lighter:      #000078;
+  --md-default-fg-color--lightest:     #000078;
+
+  /* Color de acento (enlaces, botones) */
+  --md-accent-fg-color:         #73edff;
+
+  /* Color del título del sitio y menús en la barra superior */
+  --md-header-fg-color: #000078;
+
+  /* Color del texto principal */
+  --md-typeset-color: #000078; 
+
+  /* Color del texto más suave (notas al pie, metadatos) */
+  --md-typeset-soft-color: #000078;
+
+  /* Color de los enlaces del menú lateral (no seleccionados) */
+  --md-nav-link-color: #000078;
+
+  /* Color del enlace cuando pasas el ratón o está seleccionado */
+  --md-accent-fg-color: #73edff;
+}
+
+.md-typeset {
+  color: #000078;      /* Color del texto */
+  font-size: 0.8rem;   /* Por si quieres ajustar el tamaño */
+  line-height: 1.6;    /* Mejora la legibilidad aumentando el espacio entre líneas */
+  text-align: justify; /* Opcional: para justificar el texto */
+}
+
+.critic {
+  background-color: #73edff !important;
+}
+
+h1, h2 {
+  font-weight: bold !important;
+}
+
+code {
+  color: #000078 !important;
+}

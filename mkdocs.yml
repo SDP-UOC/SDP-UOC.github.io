@@ -1,0 +1,64 @@
+site_name: SDP-UOC
+site_url: https://sdp-uoc.github.io/
+site_author: Javier Canovas
+remote_branch: gh-pages
+remote_name: origin
+
+theme:
+  language: es 
+  name: material
+  logo: assets/logo-uoc.png
+  features:
+    - navigation.footer
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - tables
+  - pymdownx.critic
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      default_language: es
+      languages:
+        - locale: es
+          name: Español
+          default: true
+          build: true
+          nav:
+            - Inicio: index.md
+        - locale: en
+          name: English
+          default: false
+          build: true
+          site_name: SDP-UOC
+          nav:
+            - Home: index.md
+        - locale: ca
+          name: Català
+          default: false
+          build: true
+          site_name: SDP-UOC
+          nav:
+            - Inici: index.md
+extra:
+  alternate:
+    - name: Español
+      link: /
+      lang: es
+    - name: Català
+      link: /ca/
+      lang: ca
+    - name: English
+      link: /en/
+      lang: en
